@@ -1,0 +1,7 @@
+C:\Users\vicar\OneDrive\Área de Trabalho\Pessoal\Estudos\Curso - C#\Projetos\GeradorDeSenhas\GeradorDeSenhas\bin\Debug\GeradorDeSenhas.exe.config
+C:\Users\vicar\OneDrive\Área de Trabalho\Pessoal\Estudos\Curso - C#\Projetos\GeradorDeSenhas\GeradorDeSenhas\bin\Debug\GeradorDeSenhas.exe
+C:\Users\vicar\OneDrive\Área de Trabalho\Pessoal\Estudos\Curso - C#\Projetos\GeradorDeSenhas\GeradorDeSenhas\bin\Debug\GeradorDeSenhas.pdb
+C:\Users\vicar\OneDrive\Área de Trabalho\Pessoal\Estudos\Curso - C#\Projetos\GeradorDeSenhas\GeradorDeSenhas\obj\Debug\GeradorDeSenhas.csproj.AssemblyReference.cache
+C:\Users\vicar\OneDrive\Área de Trabalho\Pessoal\Estudos\Curso - C#\Projetos\GeradorDeSenhas\GeradorDeSenhas\obj\Debug\GeradorDeSenhas.csproj.CoreCompileInputs.cache
+C:\Users\vicar\OneDrive\Área de Trabalho\Pessoal\Estudos\Curso - C#\Projetos\GeradorDeSenhas\GeradorDeSenhas\obj\Debug\GeradorDeSenhas.exe
+C:\Users\vicar\OneDrive\Área de Trabalho\Pessoal\Estudos\Curso - C#\Projetos\GeradorDeSenhas\GeradorDeSenhas\obj\Debug\GeradorDeSenhas.pdb

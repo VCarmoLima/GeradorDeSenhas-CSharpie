@@ -76,15 +76,6 @@ namespace GeradorDeSenhas
             Console.WriteLine("");
             Console.WriteLine("--------------------------------------------------------------------------");
             Console.WriteLine("");
-            bool qtdCaracteres2;
-            if (qtdCaracteres == 1)
-                {
-                qtdCaracteres2 = true;
-                }
-            else
-                {
-                qtdCaracteres2 = false;
-                }
 
             int caractereNum = 0;
             while (caractereNum != 1 && caractereNum != 2)
@@ -159,6 +150,60 @@ namespace GeradorDeSenhas
                 {
                 caractereEspecial2 = false;
                 }
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("--------------------------------------------------------------------------");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            string resultado = GerarSenhas(qtdCaracteres, caractereNum2, caractereEspecial2);
+            Console.Write("Sua senha gerada é: {0}", resultado);
+            Console.WriteLine("");
+
+
+            }
+
+        public static string GerarSenhas(int qtdCaracteres, bool caractereNum2, bool caractereEspecial2)
+            {
+            string letrasMaiús = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            string letrasMinús = "abcdefghijklmnopqrstuvwxyz";
+            string numeros = "0123456789";
+            string caracteresEspeciais = "#$@%&";
+
+            StringBuilder senha = new StringBuilder();
+            Random aleatorio = new Random();
+
+            if (caractereNum2 == true && caractereEspecial2 == true)
+                {
+                senha.Append(numeros[aleatorio.Next(numeros.Length)]);
+                senha.Append(numeros[aleatorio.Next(numeros.Length)]);
+
+                senha.Append(caracteresEspeciais[aleatorio.Next(caracteresEspeciais.Length)]);
+                senha.Append(caracteresEspeciais[aleatorio.Next(caracteresEspeciais.Length)]);
+
+                for (int i = 0; i < (qtdCaracteres - 4); i++)
+                    {
+                    string senhaAleatoria = letrasMaiús + letrasMinús;
+
+                    int indice = aleatorio.Next(senhaAleatoria.Length);
+                    senha.Append(senhaAleatoria[indice]);
+                    }
+
+                senha = new StringBuilder(new string(senha.ToString().ToCharArray().OrderBy(c => aleatorio.Next()).ToArray()));
+
+                }
+            else if (caractereNum2 == true && caractereEspecial2 == false)
+                {
+                //ainda irei codar
+                }
+            else if (caractereNum2 == false && caractereEspecial2 == true)
+                {
+                //ainda irei codar
+                }
+            else if (caractereNum2 == false && caractereEspecial2 == false)
+                {
+                //ainda irei codar
+                }
+            return (senha.ToString());
             }
         }
     }
